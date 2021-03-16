@@ -1,5 +1,8 @@
-// Numbers to Letters
+function getAverage(marks){
+  return Math.floor(marks.reduce((x,y) => x + y) / marks.length);
+ }
 
+// Numbers to Letters
 function switcher(x){
     var newArray = [];
     var alphabet = " ?!abcdefghijklmnopqrstuvwxyz".split("").reverse();
@@ -14,10 +17,11 @@ function switcher(x){
     return newArray.join("");
   }
 
-// function getAverage(marks){
-//   //TODO : calculate the downwar rounded average of the marks array
-//   return Math.floor(marks.reduce((x,y) => x + y) / marks.length);
-//  }
-
-  module.exports = switcher;
+  // module.exports = switcher;
+  // module.exports = getAverage;
+ 
+  module.exports = {
+    switcher,
+    getAverage
+  }
   
